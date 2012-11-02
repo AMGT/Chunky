@@ -1,0 +1,219 @@
+.header{
+	height:105px;
+	background:url(../img/backheader.png) no-repeat top left;
+	margin-bottom: 10px;
+
+	a.link-logo{
+		width: 260px;
+		height: 75px;
+		text-indent: -9000px;
+		display:inline-block;
+		float: left;
+
+		@media only screen and (max-width: 979px){
+			width:230px;
+		}
+	}
+
+	.head-menu{
+		height: 80px;
+		float:right !important;
+		margin-right: 10px;
+
+		@media only screen and (max-width: 979px){
+			width:62.10526315789474%;
+		}
+
+		.date{
+			width:100%;
+			float:left;
+
+			p{
+				float:right;
+				margin:1px 0;
+				color:#fff;
+				font-size: 9px;
+
+				@media only screen and (max-width: 979px){
+					display:none;
+				}
+			}
+		}
+
+		.search-sms{
+			@extend .date;
+			height:25px;
+			margin-top: 5px;
+
+			a, input{
+				float:right;
+
+				&.sms-online{
+					display:block;
+					padding:4px 7px;
+					color:#fff;
+					text-transform:uppercase;
+					border:1px solid #fff;
+
+					&:hover{
+						background-color: rgba(255, 255, 255, 0.2);
+					}
+				}
+
+				&.sup-search{
+					width:139px;
+					height:17px;
+					font-style:italic;
+					font-size: 12px;
+					color:$textogeneral;
+					border:2px solid rgba(255, 255, 255, 0.8);
+					border-right:none;
+					background-color: #fff;
+
+					@media only screen and (max-width: 979px){
+						width:255px;
+					}
+
+					@media only screen 
+					and (max-device-width: 979px)
+					and (orientation:portrait){
+						width:234px;
+						height:15px;
+					}
+
+				}
+
+				&.sup-search-icon{
+					background-image:url(../img/lupa_buscar.png);
+					background-repeat:no-repeat;
+					background-color:rgba(255, 255, 255, .4);
+					width:23px;
+					height:23px;
+					border:2px solid #fff;
+					margin-right: 10px;
+					cursor:pointer;
+					*height:24px;
+
+					@media only screen 
+					and (max-device-width: 979px)
+					and (orientation:portrait){
+						height: 24px;
+					}
+				}
+
+				@media only screen 
+				and (min-device-width : 600px) 
+				and (max-device-width : 1024px){
+					border-radius:0px;
+					-moz-border-radius:0px;
+					-webkit-border-radius:0px;
+					-ms-border-radius:0px;
+					-o-border-radius:0px;
+				}
+			}
+		}
+
+		nav.menu-superior{
+			@extend .date;
+			margin-top: 3px;
+
+			ul{
+				float:right;
+				margin:0;
+				margin-top: 0;
+
+				li{
+					display:inline-block;
+					*vertical-align: auto;
+					*display: inline;
+
+					a{
+						display:inline-block;
+						width:103px;
+						color:#fff;
+						font-size: 13px;
+						padding:9px 0px 2px 5px;
+						border: 1px solid #fff;
+
+						&.faq-superior{
+							width:auto;
+							padding:9px 7px 2px 7px;
+							font-weight: 700;
+							font-family: Arial;
+						}
+
+						&.sup-active{
+							@include rgba-background(rgba(255,255,255,0.75));
+							color:#000;
+							border:3px solid #fff;
+
+							&:hover{
+								@include rgba-background(rgba(255,255,255,0.75));
+								color:#000;
+							}
+						}
+
+						&:hover{
+							@include rgba-background(rgba(255,255,255,0.2));
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@include menu-principal;
+}
+
+
+// --- Colores Random --- //
+
+
+.patron1{ 
+	background-color: $personalcolor1;
+	background-position: 0 0; 
+	width: 960px; 
+	height: 105px; 
+} 
+.patron2{ 
+	background-color: $personalcolor2;
+	background-position: 0 -115px; 
+	width: 960px; 
+	height: 105px; 
+} 
+.patron3{ 
+	background-color: $personalcolor3;
+	background-position: 0 -230px; 
+	width: 960px; 
+	height: 105px; 
+} 
+.patron4{ 
+	background-color: $personalcolor4;
+	background-position: 0 -345px; 
+	width: 960px; 
+	height: 105px; 
+} 
+.patron5{ 
+	background-color: $personalcolor5;
+	background-position: 0 -460px; 
+	width: 960px; 
+	height: 105px; 
+} 
+.patron6{ 
+	background-color: $personalcolor6;
+	background-position: 0 -575px; 
+	width: 960px; 
+	height: 105px; 
+} 
+.patron7{ 
+	background-color: $personalcolor7;
+	background-position: 0 -690px; 
+	width: 960px; 
+	height: 105px; 
+} 
+.patron8{ 
+	background-color: $personalcolor8;
+	background-position: 0 -805px; 
+	width: 960px; 
+	height: 105px; 
+} 

@@ -1,0 +1,32 @@
+
+//---------- Colores Corporativos -----------//
+
+$personalcolor1: #00b4c5;
+$personalcolor2: #007c85;
+$personalcolor3: #f2c108;
+$personalcolor4: #f287b7;
+$personalcolor5: #d0186b;
+$personalcolor6: #0057a8;
+$personalcolor7: #7b3d76;
+$personalcolor8: #030018;
+$personalcolor9: #5a461b;
+
+
+//---------- Colores de Texto -----------//
+
+$textogeneral: #4a4a4a;
+
+
+//---------- Colores de Estructura -----------//
+
+$fondobloques:#eee;
+$bordebloques:#bababa;
+
+//----------- Mixin Background Color rgba -----------//
+
+@mixin bgcolorRgba($rgba1, $rgba2, $rgba3, $opacity){
+	background-color: ($rgba1, $rgba2, $rgba3);
+	background-color: ($rgba1, $rgba2, $rgba3, $opacity);
+}
+
+

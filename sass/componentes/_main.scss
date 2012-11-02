@@ -1,0 +1,15 @@
+
+.main{
+	max-width:100%;
+	height: auto;
+
+
+	@media only screen 
+	and (max-width : 979px) {
+		width:100% !important;
+		float:left !important;
+	}
+
+	
+}
+

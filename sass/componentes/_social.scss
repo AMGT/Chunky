@@ -1,0 +1,39 @@
+
+@import "social/*.png";
+
+@include all-social-sprites;
+
+.social{	
+	margin:10px auto -30px auto;
+	ul{
+		width: 182px;
+		margin:0 auto;
+		li{
+			display: -moz-inline-stack;
+			display: inline-block;
+			vertical-align: middle;
+			*vertical-align: auto;
+			zoom: 1;
+			*display: inline;
+			float: left;
+
+			a{
+			display:block;
+			height:20px;
+			width: 20px;
+			margin:0 3px 0 3px;
+			text-indent:-99999px;
+			}
+		}
+	}
+
+//------Centrar Iconos en resolución menor a 980px ------//
+
+	@media only screen
+	and (max-width:979px){
+		width:100% !important;
+		margin-bottom: 30px;
+	}
+}
+
+

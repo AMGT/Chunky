@@ -1,0 +1,17 @@
+.footer-main{
+	border-top:1px solid #B9B9B9;
+	margin-top: 10px;
+	.footer-nav{
+		height:auto;
+		margin-bottom:20px;		
+
+		@media only screen
+		and (max-width : 979px){
+			width:100% !important;
+			float:left !important;
+		}
+
+		@include footer;
+	}
+
+}

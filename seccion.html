@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="es" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<title>Personal | Layout Log</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="" />
+	<meta name="author" content="">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/functions.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+
+	if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)){ //test for MSIE x.x;
+		   var ieversion=new Number(RegExp.$1) // capture x.x portion and store as a number
+		   if (ieversion>=7  && ieversion<8)		 
+		   	location.href='explorer.html'			
+	}
+
+	</script> 
+
+	
+	<!--[if IE]> <style type="text/css">
+		.row-fluid{
+		float:left;
+		}
+		</style>
+		<![endif]-->
+	</head>
+	<body>
+
+		<!-- Contenedor General -->
+		<div class="container">
+			<!-- Header -->
+			<header class="row-fluid header">
+				<div class="span24 header logos" id="header">
+					<!-- Logo, Buscador, SMS Online, Menu Superior -->
+					<div class="row-fluid">
+						<a class="link-logo" href="#">Home</a>
+						<div class="span12 head-menu">
+							<!-- <div class="date"> -->
+							<script>
+							MostrarFecha();
+							</script>
+							<!-- </div> -->
+							<div class="search-sms">
+								<a class="sms-online" href="#">SMS ONLINE</a>
+								<input type="submit" value="" class="sup-search-icon">
+								<input type="text" name="Buscar" value="Buscar" id="id-name" class="sup-search">
+							</div>
+							<nav class="menu-superior">
+								<ul>
+									<li><a class="sup-active"href="#">Individuos</a></li>
+									<li><a href="#">Empresas</a></li>
+									<li><a href="#">Institucional</a></li>
+									<li><a class="faq-superior" href="#">?</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+
+					<!-- Menu Principal -->
+					<div class="row-fluid">
+						<nav class="menu-principal">
+							<ul id="nav-principal">
+								<li><a href="#">Mi Cuenta</a></li>
+								<li><a href="#">Club Personal</a></li>
+								<li><a href="#">Planes</a></li>
+								<li><a href="#">Packs</a></li>
+								<li><a href="#">Promociones</a></li>
+								<li><a href="#">Compra Online</a></li>
+								<li><a href="#">Servicios</a></li>
+								<li><a href="#">Apps, Música y +</a></li>
+								<li><a href="#">Internet Movil</a></li>
+								<li><a href="#">Internacional</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<!-- Seccion-->
+			<section class="row-fluid seccion-principal">
+				<!--  -->
+
+				<div class="span19 main">
+
+					<!--Titulo de Pagina + Menu Secundario-->
+					<header class="head-page">
+
+						<h1 class="titulo-pagina">Mi Cuenta</h1>
+
+						<!-- Panel login dropdown -->
+						<aside class="login-drop-down">
+							<a href="#" class="bot-login-panel">
+								<span class="bot-login-txt bot-login-txt-datos">Mis datos</span>
+							</a>
+
+							<div class="box-login-drop-down">
+								<div class="mis-datos-panel">
+									<div class="nombre-usuario">
+										<p class="name">Maximiliano Bartolozzi</p>
+									</div>
+									<div class="linea-usuario">
+										<p class="linea">Línea: 3513785373</p>
+										<a class="bot-editar-perfil" href="#">Ver/editar perfil</a>
+									</div>
+
+									<a class="bot-cerrar-sesion" href="#">Cerrar sesión</a>
+									<div class="ayuda">
+
+									</div>
+								</div>
+							</div>
+						</aside>
+
+						<!-- Menu de segundo nivel -->
+						<div class="menu-secundario">
+							<!-- Menu de 2º nivel tabs -->
+							<nav>
+								<ul>
+									<li><a class="megamenu-btn" onclick="dropMegamenu('megamenu1')" href="">Admin. usuarios</a></li>
+									<li><a class="megamenu-btn" onclick="dropMegamenu('megamenu2')" href="">Servicios</a></li>
+									<li><a class="megamenu-btn" onclick="dropMegamenu('megamenu3')" href="">Inf. de Línea</a></li>
+									<li><a href="">Movimientos</a></li>
+									<li><a href="">Inf. de Cuenta</a></li>
+									<li><a href="">Novedades</a></li>
+								</ul>
+							</nav>
+							<!--  -->
+
+							<!-- Menú de 3º nivel (ex izquierdo) -->
+							<div id="megamenu1" class="megamenu-box">
+								<div class="megamenu-box-area">
+									<div class="megamenu-ul-group">	
+										<div class="btn-home-wrapper">
+											<div class="btn-home">	
+												<div class="txt">
+													<p class="title"><a href="#">Servicios activos</a></p>
+													<p>Gestiona los servicios activos en las líneas de tu cuenta.</p>	
+												</div>	
+												<div class="icon">
+													<img src="img/prueba-icon-home-seccion.png" alt="">
+												</div>	
+											</div>
+										</div>		
+										
+										<ul>
+											<li><a class="megamenu-btn-1" href="">Alertas personal</a></li>
+										</ul>
+										<ul>
+											<li><a class="megamenu-btn-1" href="">Clearing Voz y SVA</a></li>
+											<li><a class="megamenu-btn-2" href="">Paquete de servicios</a></li>
+											<li><a class="megamenu-btn-2" href="">Unidades asignadas por línea</a></li>
+										</ul>
+									</div>
+									<div class="megamenu-ul-group">
+										<ul>
+											<li><a class="megamenu-btn-1" href="">Consulta servicio técnico</a></li>
+										</ul>
+										<ul>
+											<li><a class="megamenu-btn-1" href="">Consumos de Internet</a></li>
+											<li><a class="megamenu-btn-2" href="">Consumo</a></li>
+											<li><a class="megamenu-btn-2" href="">Legales</a></li>
+										</ul>
+
+										<ul>
+											<li><a class="megamenu-btn-1" href="">Detalle de Consumos on-line</a></li>
+											<li class="megamenu-accordion"><span class="megamenu-accordion-more">Menú de opciones </span>
+												<ul>
+													<li><a href="">Opcion 1</a></li>
+													<li><a href="">Opcion 2</a></li>
+													<li><a href="">Opcion 3</a></li>
+												</ul>
+											</li>
+										</ul> 
+									</div>
+
+								</div>
+								<div class="megamenu-footer">
+									<img src="img/banner-megamenu.jpg" alt="">
+								</div>
+							</div>
+							<!--  -->
+							<div id="megamenu2" class="megamenu-box">
+								<div class="megamenu-box-area">
+									<div class="megamenu-ul-group">	
+										<ul>
+											<li><a class="megamenu-btn-1" href="">Usuarios</a></li>
+										</ul>									
+										<ul>
+											<li><a class="megamenu-btn-1" href="">Crear nuevo usuario</a></li>
+										</ul>
+										<ul>
+											<li><a class="megamenu-btn-1" href="">Delegar superadministrador</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="megamenu-footer">
+									<img src="img/banner-megamenu.jpg" alt="">
+								</div>
+							</div>
+							<!--  -->
+							<div id="megamenu3" class="megamenu-box">
+								<div class="megamenu-box-area">
+									<div class="megamenu-ul-group">	
+										<ul>
+											<li><a class="megamenu-btn-1" href="">Botón 1</a></li>
+											<li class="megamenu-accordion"><span class="megamenu-accordion-more">Menú de opciones </span>
+												<ul>
+													<li><a href="">Opcion 1</a></li>
+													<li><a href="">Opcion 2</a></li>
+													<li><a href="">Opcion 3</a></li>
+												</ul>
+											</li>
+											<li class="megamenu-accordion"><span class="megamenu-accordion-more">Menú de opciones </span>
+												<ul>
+													<li><a href="">Opcion 1</a></li>
+													<li><a href="">Opcion 2</a></li>
+													<li><a href="">Opcion 3</a></li>
+													<li><a href="">Opcion 4</a></li>
+												</ul>
+											</li>
+										</ul>									
+										<ul>
+											<li><a class="megamenu-btn-1" href="">Botón 2</a></li>
+											<li class="megamenu-accordion"><span class="megamenu-accordion-more">Otro menú de opciones </span>
+												<ul>
+													<li><a href="">Opcion 1</a></li>
+													<li><a href="">Opcion 2</a></li>
+													<li><a href="">Opcion 3</a></li>
+													<li><a href="">Opcion 4</a></li>
+												</ul>
+											</li>
+										</ul>
+										<ul>
+											<li><a class="megamenu-btn-1" href="">Botón 3</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="megamenu-footer">
+									<img src="img/banner-megamenu.jpg" alt="">
+								</div>
+							</div>
+
+						</div>
+					</header>
+
+					<!--Contenido Principal-->
+					<div class="content-page-log" id="main-content">			
+
+						<!--Cuerpo Central-->
+						<article class="cont-cent" id="article">
+							<nav class="breadcrumb">
+								<ul>
+									<li class="prev"><a href="">Home</a></li>
+									<li class="divider">></li>
+									<li class="prev"><a href="">Mi cuenta</a></li>
+									<li class="divider">></li>
+									<li>Facturación Digital</li>
+								</ul>
+							</nav>
+							<h3 class="titulo-contenido">Facturación Digital</h3>
+							<h4 style="font-size:14px; font-weight:700; margin-top:10px">Proceso de desuscripción</h4>
+							<div style="border-bottom:1px solid #eee; overflow:hidden; padding:0px 2px 10px 0px">
+								<p style="font-weight:700;">Mis facturas</p>
+								<img src="img/icono_mis_facturas.jpg" alt="mis facturas" style="float:left; margin-right:20px;">
+								<ul style="float:left; min-width:300px;">
+									<li>Mirá tu factura antes de recibirla en tu domicilio.</li>
+									<li>Consultá facturas anteriores.</li>
+								</ul>
+								<div style="clear:both;">
+									<input style="float:right;" type="submit" class="boton botoncyan" onclick="javascript: window.location = 'facturadigital.html'" value="Ver facturas">
+								</div>
+							</div>
+
+							<div style="border-bottom:1px solid #eee; overflow:hidden; padding:0px 2px 10px 0px">
+								<p style="font-weight:700;">Factura Online</p>
+								<img src="img/icono_mis_facturas.jpg" alt="mis facturas" style="float:left; margin-right:20px;">
+								<ul style="float:left; min-width:300px;">
+									<li>Estás suscripto al servicio.</li>
+									<li> Si queres volver a recibir la factura impresa en tu domicilio ingresá acá.</li>
+								</ul>
+								<div style="clear:both;">
+									<input style="float:right;" type="submit" class="boton botoncyan" value="Desuscribirse">
+								</div>
+							</div><div style="border-bottom:1px solid #eee; overflow:hidden; padding:0px 2px 10px 0px">
+							<p style="font-weight:700;">Alarmas</p>
+							<img src="img/icono_mis_facturas.jpg" alt="mis facturas" style="float:left; margin-right:20px;">
+							<ul style="float:left; min-width:300px;">
+								<li>Configuralas y recibí una alerta para enterarte antes del vencimiento de tu
+									factura por e-mail o SMS.</li>
+									<li>Hola</li>
+								</ul>
+								<div style="clear:both;">
+									<input style="float:right;" type="submit" class="boton botoncyan" value="Configurar">
+								</div>
+							</div>
+
+
+						</article>
+					</div>
+				</div>
+
+				<!--Box usuario-->
+				<aside class="span5 box-usuario">
+					<h4 class="bienvenidos">Bienvenidos<a href="#">Cerrar sesión</a></h4>
+					<div class="nombre-usuario">
+						<p class="name">Maximiliano Bartolozzi</p>
+					</div>
+					<div class="linea-usuario">
+						<p class="linea">3513785373</p>
+						<a href="#">Ver/editar perfil</a>
+					</div>
+					<div class="ayuda">
+
+					</div>
+				</aside>
+			</section>
+
+
+			<!-- Footer-->
+			<footer class="footer-main row-fluid">
+				<nav class="span19 footer-nav">
+					<ul>
+						<li>
+							<ul class="navpie">
+								<li class="titulo-footer">Institucional</li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="navpie">
+								<li class="titulo-footer">Acerca de personal.com.ar</li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="navpie">
+								<li class="titulo-footer">Centros de Atención</li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="navpie">
+								<li class="titulo-footer">Ayuda</li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="navpie">
+								<li class="titulo-footer">Legal</li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="navpie">
+								<li class="titulo-footer">Grupo Telecom</li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+				<!--Social-->
+				<div class="span5 social">
+					<ul>
+						<li><a class="social-seguinos_face" href="http://www.facebook.com/personalargentina" title="Seguinos en Facebook"></a></li>
+						<li><a class="social-seguinos_twitter" href="http://twitter.com/personalar" title="Seguinos en Twitter"></a></li>
+						<li><a class="social-google" href="https://plus.google.com/113768935913334354363?prsrc=3" title="Seguinos en Google+"></a></li>
+						<li><a class="social-seguinos_youtube" href="http://www.youtube.com/personalargentina" title="Seguinos en YouTube"></a></li>
+						<li><a class="social-link" href="http://www.linkedin.com/company/telecompersonal-argentina" title="Linkedin"></a></li>
+						<li><a class="social-seguinos_four" href="http://es.foursquare.com/personalar/" title="Seguinos en Foursquare"></a></li>
+						<li><a class="social-seguinos_pinterest" href="http://pinterest.com/personalarg/" title="Seguinos en Pinterest"></a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

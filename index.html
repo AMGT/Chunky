@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="es" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<title>Personal | Layout Log</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="" />
+	<meta name="author" content="">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/functions.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if IE]> <style type="text/css">
+		.row-fluid{
+		float:left;
+		}
+		</style>
+		<![endif]-->
+	</head>
+	<body>
+
+		<!-- Contenedor General -->
+		<div class="container">
+
+			<!-- Header -->
+			<header class="row-fluid">
+
+				<div class="span24 header logos" id="header">
+					<!-- Logo, Buscador, SMS Online, Menu Superior -->
+					<div class="row-fluid">
+						<a class="link-logo" href="index.html">Home</a>
+						<div class="span12 head-menu">
+							<!-- <div class="date"> -->
+							<script>
+							MostrarFecha();
+							</script>
+							<!-- </div> -->
+							<div class="search-sms">
+								<a class="sms-online" href="#">SMS ONLINE</a>
+								<input type="submit" value="" class="sup-search-icon">
+								<input type="text" name="Buscar" value="Buscar" id="" class="sup-search">
+								<!-- <input type="search" name="Buscar" placeholder="Buscar" id="" class="sup-search"> -->
+							</div>
+							<nav class="menu-superior">
+								<ul>
+									<li><a class="sup-active"href="#">Individuos</a></li>
+									<li><a href="#">Empresas</a></li>
+									<li><a href="#">Institucional</a></li>
+									<li><a class="faq-superior" href="#">?</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+
+					<!-- Menu Principal -->
+					<div class="row-fluid">
+						<nav class="menu-principal">
+							<ul id="nav-principal">
+								<li><a href="facturacion.html">Mi Cuenta</a></li>
+								<li><a href="#">Club Personal</a></li>
+								<li><a href="#">Planes</a></li>
+								<li><a href="#">Packs</a></li>
+								<li><a href="#">Promociones</a></li>
+								<li><a href="#">Compra Online</a></li>
+								<li><a href="#">Servicios</a></li>
+								<li><a href="#">Apps, Música y +</a></li>
+								<li><a href="#">Internet Movil</a></li>
+								<li><a href="#">Internacional</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<!-- ***** Box Login resolucion hasta 979px *****-->
+
+			<aside class="login-drop-down">
+				<a href="#" class="bot-login-panel">
+					<span class="bot-login-txt">Ingresá con tu línea</span>
+				</a>
+
+				<div class="box-login-drop-down">
+					<div class="login-form-panel form-login">
+						<div class="linea-login">
+							<label for="caracteristica" class="numero-linea">Número de línea</label>
+							<label for="caracteristica" class="cero">0</label>
+							<input type="text" name="" id="caracteristica" class="caracteristica" placeholder="Ej.11">
+							<label for="numero" class="quince">15</label>
+							<input type="text" name="" id="numero" class="numero" placeholder="Ej.67897899">
+						</div>
+						<div class="clave-login">
+							<label for="clave" class="numero-linea">Clave Personal</label>
+							<input type="password" name="clave personal" id="clave" class="clave-personal">
+						</div>
+
+						<div class="ingresar">
+							<a href="#" class="no-clave">No tengo Clave</a>
+							<input type="submit" value="Ingresá" class="bot-ingresa">
+						</div>
+						<div class="como">
+							<a href="#" class="como-ingresar">¿Cómo ingresar?</a>
+						</div>
+
+						<div class="acceso-pc">
+							<input type="checkbox" name="pc pública" id="pc-publica">
+							<label for="pc-publica" class="pc-pub">Estoy en una PC pública</label>
+						</div>
+					</div>
+					<div class="generar-clave-drop">
+						<label for="genera-tuclave" class="primera-vez">¿Primera vez que ingresás?</label>
+						<a href="#" class="genera-tuclave">Generá tu Clave Personal</a>
+					</div>
+				</div>
+			</aside>
+
+
+			<!-- Seccion-->
+			<section class="row-fluid seccion-principal">
+				<div class="span19 main">
+					<div class="imagen-prueba">
+						<img src="img/prueba-borrar.jpg" class="img-pruueba" alt="imagen de prueba" width="100%">
+					</div>
+
+				</div>
+
+				<!--Box Login-->
+				<aside class="span5 box-login">
+					<h4 class="ingresa">Ingresá con tu línea</h4>
+					<div class="form-login">
+						<div class="linea-login">
+							<label for="caracteristica" class="numero-linea">Número de línea</label>
+							<label for="caracteristica" class="cero">0</label>
+							<input type="text" name="" id="caracteristica" class="caracteristica" placeholder="Ej.11">
+							<label for="numero" class="quince">15</label>
+							<input type="text" name="" id="numero" class="numero" placeholder="Ej.67897899">
+						</div>
+						<div class="clave-login">
+							<label for="clave" class="numero-linea">Clave Personal</label>
+							<a href="#" class="no-clave">No tengo Clave</a>
+							<input type="password" name="clave personal" id="clave" class="clave-personal">
+						</div>
+						<div class="acceso-pc">
+							<input type="checkbox" name="pc pública" id="pc-publica">
+							<label for="pc-publica" class="pc-pub">Estoy en una PC pública</label>
+						</div>
+						<div class="ingresar">
+							<a href="#" class="como-ingresar">¿Cómo ingresar?</a>
+							<input type="submit" value="Ingresá" class="bot-ingresa">
+						</div>
+					</div>
+					<div class="generar-clave">
+						<label for="genera-tuclave" class="primera-vez">¿Primera vez que ingresás?</label>
+						<a href="#" class="genera-tuclave">Generá tu Clave Personal</a>
+					</div>
+
+					<div class="prueba-alan">
+						<p class="tituloalan">Accediendo a Mi Cuenta</p>
+						<ul>
+							<li><a href="#">Gestioná números amigos</a></li>
+							<li><a href="#">Comprá packs</a></li>
+							<li><a href="#">Adherite a factura online</a></li>
+							<li><a href="#">Generátui clave personal</a></li>
+							<li><a href="#">Suscribite al débito automático</a></li>
+							<li><a href="#">Conocé un hobbit</a></li>
+							<li><a href="#">mucho más...</a></li>
+						</ul>
+					</div>
+				</aside>
+			</section>
+
+
+			<!-- Footer-->
+			<footer class="footer-main row-fluid">
+				<nav class="span19 footer-nav">
+					<ul>
+						<li>
+							<ul class="navpie">
+								<li class="titulo-footer">Institucional</li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="navpie">
+								<li class="titulo-footer">Acerca de personal.com.ar</li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="navpie">
+								<li class="titulo-footer">Centros de Atención</li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="navpie">
+								<li class="titulo-footer">Ayuda</li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="navpie">
+								<li class="titulo-footer">Legal</li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="navpie">
+								<li class="titulo-footer">Grupo Telecom</li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+								<li><a href="#">Opciones</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+				<!--Social-->
+				<div class="span5 social">
+					<ul>
+						<li><a class="social-seguinos_face" href="http://www.facebook.com/personalargentina" title="Seguinos en Facebook"></a></li>
+						<li><a class="social-seguinos_twitter" href="http://twitter.com/personalar" title="Seguinos en Twitter"></a></li>
+						<li><a class="social-google" href="https://plus.google.com/113768935913334354363?prsrc=3" title="Seguinos en Google+"></a></li>
+						<li><a class="social-seguinos_youtube" href="http://www.youtube.com/personalargentina" title="Seguinos en YouTube"></a></li>
+						<li><a class="social-link" href="http://www.linkedin.com/company/telecompersonal-argentina" title="Linkedin"></a></li>
+						<li><a class="social-seguinos_four" href="http://es.foursquare.com/personalar/" title="Seguinos en Foursquare"></a></li>
+						<li><a class="social-seguinos_pinterest" href="http://pinterest.com/personalarg/" title="Seguinos en Pinterest"></a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
