@@ -6,15 +6,15 @@
 
 @import "compass/css3/box-shadow";
 
+ @import "compass/css3/text-shadow";
+
 @import "compass/css3/transition";
 
 @import "compass/css3/border-radius";
 
-@import "compass/css3/box-sizing"; 
+@import "compass/css3/box-sizing";
 
-@import "rgbapng";
-
-/*--- Grids Responsive | Reset ---*/
+/*--- Grids | Responsive | Reset ---*/
 
 @import "componentes/grids";
 
@@ -24,18 +24,17 @@
 
 @import "componentes/variables";
 
-@import "componentes/patrones";
+@import "componentes/patterns";
 
 @import "componentes/build";
 
+@import "componentes/tooltip";
 
 /*--- layout ---*/
 
 @import "componentes/header";
 
 @import "componentes/main";
-
-@import "componentes/main-nav";
 
 @import "componentes/login";
 
@@ -46,5 +45,3 @@
 /*--- CrossBrowser ---*/
 
 @import "componentes/ie";
-
-@import "componentes/landingIe7";

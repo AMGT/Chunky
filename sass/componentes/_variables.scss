@@ -1,5 +1,5 @@
 
-//---------- Colores Corporativos -----------//
+/*--------- Colores Corporativos ---------*/
 
 $personalcolor1: #00b4c5;
 $personalcolor2: #007c85;
@@ -12,17 +12,17 @@ $personalcolor8: #030018;
 $personalcolor9: #5a461b;
 
 
-//---------- Colores de Texto -----------//
+/*--------- Colores de Texto ---------*/
 
 $textogeneral: #4a4a4a;
 
 
-//---------- Colores de Estructura -----------//
+/*--------- Colores de Estructura ---------*/
 
 $fondobloques:#eee;
 $bordebloques:#bababa;
 
-//----------- Mixin Background Color rgba -----------//
+/*--------- Mixin Background Color rgba ---------*/
 
 @mixin bgcolorRgba($rgba1, $rgba2, $rgba3, $opacity){
 	background-color: ($rgba1, $rgba2, $rgba3);

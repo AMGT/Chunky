@@ -4,7 +4,7 @@
 @include font-face("Platform-bold", font-files("Platform-Bold.ttf", "Platform-Bold.otf","Platform-Bold.eot","Platform-Bold.woff"));
 
 
-h1, h2, h3, h4, h5, h6, ul, ol,li{
+h1, h2, h3, h4, h5, h6, ul, ol,li{ 
 	margin:0;
 	font-weight:normal;
 }
@@ -26,6 +26,10 @@ ul{
 	list-style:none;
 }
 
+img{
+	max-width:100%;
+}
+
 input[type=submit],
 input[type=reset],
 input[type=button],
@@ -38,30 +42,29 @@ input[type=search]
 
 .row{
 	min-width:748px !important;
-	
+
 }
 
 body{
 	font-family:Tahoma, Geneva, sans-serif;
 	font-size: 11px;
 	margin:0;
-	
+
 	.container{
 		margin:0 auto;
 		padding: 0 10px;
 	}
 }
 
-// Fija ancho mínimo 700px //
+/*--- Fija ancho mínimo 700px ---*/
 
-@media only screen
-and (max-width:700px){
+@media only screen and (max-width:700px){
 
 	.header{
 		width:680px !important;
 	}
 
-	.seccion-principal{
+	.main-section{
 		width:680px !important;
 	}
 
@@ -69,3 +72,12 @@ and (max-width:700px){
 		width:680px !important;
 	}
 }
+
+/*--- Ajusta al ancho del dispositivo ---*/
+
+@media only screen and (max-device-width : 1300px){
+	.container{
+		width: auto;
+	}
+}
+

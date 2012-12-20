@@ -1,25 +1,34 @@
-
-.box-login{
-	min-height:450px;
+.ch-box-login{
+	min-height:320px;
+	border:1px solid rgba(232, 232, 232, 1);
+	background-color: #fafafa;
 	@include box-sizing(border-box);
-	border:1px solid #d7d7d7;
 
-	@media only screen
-	and (max-width : 979px){
+	@media only screen and (max-width : 969px){
 		display:none !important;
 	}
 
-	@include ingresa;
+	@include go;
+	@include login; 
 
-	@include login;
+	.ch-pass-not{
+			display: block;
+			a{
+			text-decoration:underline;
+			color:$personalcolor1 !important;
+				&:hover{
+					text-decoration:none;
+				}
+			}
+	}
 
-	.generar-clave{
-		background-color: #eee;
-		border-bottom:1px solid #d7d7d7;
-		padding:25px 5px;
+	.ch-new-password{
+		border-top:1px solid #d7d7d7;
+		margin:0px 5px 25px 5px;
+		padding: 20px 5px 0 5px;
 		overflow:hidden;
 
-		label.primera-vez{
+		label.first-time{
 			display:block;
 			text-align:center;
 			color:$textogeneral;
@@ -27,78 +36,73 @@
 			margin-bottom: 10px;
 		}
 
-		a.genera-tuclave{
+		a.new-password{
 			display:block;
 			text-align:center;
-			@include border-radius(5px);
-			background-color: $personalcolor2;
+			background-color: $personalcolor5;
 			width:100%;
-			padding:10px 0;
-			@include box-sizing(border-box);
+			height: 32px;
+			padding:6px;
 			border:none;
 			font-family:Platform-regular;
 			font-size:13px;
 			color:#fff;
+			@include box-sizing(border-box);
+			@include border-radius(5px);
 
 			&:hover{
-				background-color: $personalcolor5;
+				background-color: #ed3383;
+			}
+
+			&:active{
+				padding-top:7px;
 			}
 		}
 	}
 }
 
-//LOGIN DROP DOWN//
-.login-drop-down{
-	float:right;
+/*--------- LOGIN DROP DOWN ---------*/
 
-		@media only screen
-		and (min-width:980px){
-			display:none;
-		}
+.ch-login-drop-down{
 
-	a.bot-login-panel{
-
-		display:inline-block;
-		width: auto;
-		font-family:Platform-regular;
-		font-size:16px;
-		letter-spacing:.1em;
-		color:#fff;
-		background: $personalcolor8; 
-		z-index: 3500; 
-		position:relative;
-		z-index:3;
-		padding:0 10px;
-		margin-bottom: 10px;
-		cursor:pointer;
-		text-align:center;
-	}
-
-	.bot-login-txt{
-		background: url(../img/icon-bot-login.png) no-repeat right -19px; 
-		line-height: 30px;
-		padding-right: 25px;
-		display: inline-block;	
-		margin: 0;
-	}
-
-	.bot-login-txt-datos{
+	.ch-btn-login-txt-datos{
 		background-position: right 9px;
 	}
 
-	.box-login-drop-down{
-
-		width:97.7%;
-		z-index:3;
+	.ch-box-login-drop-down{
+		background: #F0F0E1;
+		position: absolute;
+		top:157px;
+		border-top:3px solid $personalcolor5;
+		border-bottom:5px solid #D4D4D4;
 		padding:20px;
-		position:absolute;
-		right:10px;
-		top:145px;
-		background-color: #eee;
-		border: 1px solid #ddd;
-		@include border-radius(1px);
-		@include box-sizing(border-box);
+		width: 910px;
+
+
+		&.index{
+			@media only screen and (min-width:969px){
+			display:none !important;
+			}
+		}
+
+		@media only screen and (max-width:969px){
+			width: auto;
+			max-width: 910px;
+			min-width: 640px;
+			left:10px;
+			right: 10px;
+			top:102px;
+			z-index:4;
+		}
+		@media only screen 
+		and (min-device-width : 600px) 
+		and (max-device-width : 1024px) 
+		and (orientation : portrait){
+			top:104px;
+		}
+
 	}
+
 
 
 	fieldset{
@@ -107,18 +111,16 @@
 		padding: 0;	
 	}
 
-	.login-form-panel{
-		@media only screen
-		and (min-width: 979px){
-			display:none;
+	.ch-login-form-panel{
+		@media only screen and (max-width: 969px){
+
 		}
 
-		@media only screen
-		and (max-width: 805px){
+		@media only screen and (max-width: 805px){
 			width:100%;
 			text-align:center;
 			border:1px solid #ccc;
-			@include box-shadow(rgba(255, 255, 255, 0.6) 1px 1px 0px);
+			/*@include box-shadow(rgba(255, 255, 255, 0.6) 1px 1px 0px);*/
 		}
 		width:60%;
 		float:left;
@@ -130,12 +132,10 @@
 		@include box-sizing(border-box);
 
 
-		.linea-login{
-			@media only screen
-			and (min-width: 979px){
-				display:none;
-			}
+		.ch-cellphone{
+			@media only screen and (max-width: 969px){
 
+			}
 			width: auto;
 			margin-bottom:20px;
 			z-index:3;
@@ -144,124 +144,133 @@
 			display:inline-block;
 			text-shadow:#fff 1px 1px;
 
-			label.cero{
+			label.prefix{
 				margin-left: 20px;
 			}
 
-			input.caracteristica{
-				width:40px;
-				font-style:italic;
-				padding-left:3px;
-			}
 
-			label.quince{
+			label.line-number{
 				margin-left: 15px;
 			}
 
-			input.numero{
-				font-style:italic;
+			input{
+				height: 27px;
+				font-size: 13px;
+				padding-top: 2px;
+				border:1px solid #c0c0c0;
 				padding-left:3px;
+				outline: none;
+				@include box-sizing(border-box);
+				@include border-radius(3px);
+				@include box-shadow(0 1px 2px #dfdfdf inset);
+
+				&.prefix{
+					width:40px;
+					/*font-style:italic;*/
+					padding-left:3px;
+				}
+
+				&.line-number{
+					/*font-style:italic;*/
+					padding-left:3px;
+					width: 155px;
+				}
 			}
 		}
 
-		.clave-login{
+		.ch-password{
 			width: auto;
-			margin-bottom:15px;
+			margin-bottom:10px;
 			z-index:3;
 			padding:0 10px;
 			font-size:14px;
 			display:inline-block;
 
-			label.numero-linea{
+			label.password{
 				margin-left: 9px;
 			}
 
-			input.clave-personal{
-				margin-left: 20px;
-				width:242px;
+			input{
+				height: 27px;
+				font-size: 11px;
+				padding-top: 2px;
+				border:1px solid #c0c0c0;
+				padding-left:3px;
+				outline: none;
+				@include box-sizing(border-box);
+				@include border-radius(3px);
+				@include box-shadow(0 1px 2px #dfdfdf inset);
+
+				&.password{
+					margin-left: 20px;
+					width:246px;
+				}
 			}
 		}
 
-		.ingresar{
+		.ch-pass-not{
+			display: block;
+			font-size: 13px;
+			margin-left: 132px;
+			a{
+			text-decoration:underline;
+			color:$personalcolor1;
+				&:hover{
+					text-decoration:none;
+				}
+			}
+		}
+		.ch-go{
 			width:350px;
 			overflow:hidden;
 			text-align:center;
 			display:inline-block;
 			margin-left: 27px;
+			margin-top: 10px;
 
-
-			a.no-clave{
-				font-size: 13px;
-				text-decoration:underline;
-				color:$personalcolor1;
-				margin-left: 34px;
-
-				&:hover{
-					text-decoration:none;
-				}
-			}
-
-			input.bot-ingresa{
-				border:1px solid #009ca7;
-				padding:5px 20px;
-				color:#fff;
-				font-weight:700px;
-				font-size:14px;
+			input.btn-go{
+				width: 246px;
+				height: 30px;
 				float:right;
+				font-size:14px;
+				color:#fff;
+				border:1px solid #009ca7;
+				background-color: #00b4c5;
+				background-image: -moz-linear-gradient(top, #17bac9, #009ca8);
+				background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#17bac9), to(#009ca8));
+				background-image: -webkit-linear-gradient(top, #17bac9, #009ca8);
+				background-image: -o-linear-gradient(top, #17bac9, #009ca8);
+				background-image: linear-gradient(to bottom, #17bac9, #009ca8);
+				background-repeat: repeat-x;
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#17bac9', endColorstr='#009ca8', GradientType=0);
+				text-shadow: -1px -1px 1px rgba(0, 124, 142, 1);
+				@include border-radius(2px);
+				@include box-sizing(border-box);
 
-				background: #16d3da; /* Old browsers */
-				/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-				background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzE2ZDNkYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMWJkYzQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-				background: -moz-linear-gradient(top,  #16d3da 0%, #01bdc4 100%); /* FF3.6+ */
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#16d3da), color-stop(100%,#01bdc4)); /* Chrome,Safari4+ */
-				background: -webkit-linear-gradient(top,  #16d3da 0%,#01bdc4 100%); /* Chrome10+,Safari5.1+ */
-				background: -o-linear-gradient(top,  #16d3da 0%,#01bdc4 100%); /* Opera 11.10+ */
-				background: -ms-linear-gradient(top,  #16d3da 0%,#01bdc4 100%); /* IE10+ */
-				background: linear-gradient(to bottom,  #16d3da 0%,#01bdc4 100%); /* W3C */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16d3da', endColorstr='#01bdc4',GradientType=0 ); /* IE6-8 */
+
 
 				&:hover{
-					background:none;
-					background-color:#00c9cf;
+					background-color: #0193a0;
+					background-image: -moz-linear-gradient(top, #14b2c0, #0193a0);
+					background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#14b2c0), to(#0193a0));
+					background-image: -webkit-linear-gradient(top, #14b2c0, #0193a0);
+					background-image: -o-linear-gradient(top, #14b2c0, #0193a0);
+					background-image: linear-gradient(to bottom, #14b2c0, #0193a0);
+					background-repeat: repeat-x;
+					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#14b2c0', endColorstr='#0193a0', GradientType=0);
 				}
 
 				&:active{
-					@include box-shadow (0px 1px 7px 0px $personalcolor2 inset);
-					padding:6px 20px 4px 20px;
+					background-color: #007693;
+					padding-top:3px;
+					@include box-shadow(1px 3px 5px rgba(0, 0, 0, 0.15) inset, -1px 0px 5px rgba(0, 0, 0, 0.15) inset);
 				}
 			}
-
-		}
-
-		.como{
-			width:350px;
-			margin-top: 10px;
-			margin-left: 27px;
-			display:inline-block;
-			text-align:right;
-
-			a.como-ingresar{
-				display:block;
-				color:$personalcolor1;
-				font-size: 13px;
-				text-decoration:underline;
-
-				&:hover{
-					text-decoration:none;
-				}
-			}
-		}
-
-		.acceso-pc{
-			display:inline-block;
-			width:350px;
-			text-align:left;
 		}
 
 		.box-login-drop-down{
-			@media only screen 
-			and (min-width: 980px){
-				display:none;
+			@media only screen and (max-width: 969px){
+
 			}
 
 			z-index:3;
@@ -273,43 +282,45 @@
 			@include box-shadow(rgba(0, 0, 0, 0.4) 1px 1px 3px);
 			@include border-radius(2px);
 		}
-
-		
 	}
 
 
 	.generar-clave-drop{
-		@media only screen 
-		and (min-width : 980px){
-			display:none;
+		text-align: center;
+
+		@media only screen and (max-width : 969px){
+
 		}
 
-		@media only screen
-		and (max-width: 805px){
+		@media only screen and (max-width: 805px){
 			width:100%;
-			height:140px;
-			padding:50px;
+			padding:15px;
 		}
+
 		width:40%;
-		height:190px;
-		padding:50px 0 20px 20px;
+		padding:10px 0 20px 20px;
 		float:right;
 		@include box-sizing(border-box);
 
 		label.primera-vez{
-			display:block;
+			display:inline-block;
 			text-align:center;
 			color:$textogeneral;
-			font-size:16px;
+			font-size:14px;
 			margin-bottom: 10px;
+
+			@media only screen and (max-width: 805px){
+				float: left;
+				line-height: 2.1;
+			}
 		}
 
 		a.genera-tuclave{
-			display:block;
+			display:inline-block;
 			text-align:center;
 			@include border-radius(5px);
 			background-color: $personalcolor2;
-			width:100%;
+			min-width:300px;
 			padding:10px 0;
 			@include box-sizing(border-box);
 			border:none;
@@ -320,13 +331,21 @@
 			&:hover{
 				background-color: $personalcolor5;
 			}
+
+			@media only screen and (max-width: 805px){
+				float: left;
+				padding:5px;
+				min-width: 100px;
+				font-size: 14px;
+				margin-left: 20px;
+			}
 		}
 	}
 }
 
 
-/*Mis datos*/
-.mis-datos-panel{
+/*--- Mis datos ---*/
+.ch-my-data{
 	width:98%;
 	padding:20px;
 	border:1px solid #ddd;
@@ -334,7 +353,7 @@
 	text-align:center;
 	@include box-sizing(border-box);
 	@include box-shadow(rgba(255, 255, 255, 0.6) 1px 1px 0px);
-	.nombre-usuario{
+	.user-name{
 		p.name{
 			text-transform:uppercase;
 			font-size: 13px;
@@ -342,9 +361,9 @@
 			text-align:center;
 		}
 	}
-	.linea-usuario{
+	.user-line{
 		margin-bottom: 20px;
-		.bot-editar-perfil{
+		.btn-edit-profile{
 			padding:5px 10px;
 			color:#333;
 			font-size:12px;
@@ -355,10 +374,9 @@
 			&:hover{
 				background:#D5D5D5;
 			}
-
 		}
 	}
-	.bot-cerrar-sesion{
+	.btn-close-sesion{
 		color:$personalcolor1;
 		font-size:12px;
 		text-decoration:underline;
@@ -366,51 +384,15 @@
 		&:hover{
 			text-decoration:none;
 		}
-
 	}
 }
 
-//------- Prueba pára rpesentar a MKT -  Borrar!!! -------------//
 
-.prueba-alan{
-	padding:20px 6px;
-
-	p.tituloalan{
-		font-weight:700;
-		text-align:center;
-		margin: 0 0 10px 0;
-		font-size:13px;
-	}
-
-	ul{
-		list-style:none;
-
-		li{
-			margin-bottom: 4px;
-
-			a{
-				background-image: url(../img/bullet5nivel.png);
-				background-repeat: no-repeat;
-				background-position: 0 5px;
-				color:#999;
-				padding-left:10px;
-
-				&:hover{
-					text-decoration:underline;
-				}
-			}
-		}
-	}
-}
-
-//--------------- FIN DE PRUEBA MKT------------------//
-
-/*--- Mostrar usuario en resoluciones menores a 980px ---*/
+/*--- Mostrar usuario en resoluciones menores a 970px ---*/
 
 div.box-usuario-portrait{
 
-	@media only screen 
-	and (min-width : 980px){
+	@media only screen and (max-width : 969px){
 		display:none;
 	}
 
@@ -460,7 +442,6 @@ div.box-usuario-portrait{
 				color:$textogeneral;
 				margin-top: 0;
 			}
-
 		}
 
 		.linea-usuario{
@@ -501,22 +482,17 @@ div.box-usuario-portrait{
 		}
 	}
 }
-//-------------- USUARIO LOGUEADO ----------------//
+
+/*--------- USUARIO LOGUEADO ---------*/
 
 .box-usuario{
-	@media only screen 
-	and (max-width : 979px){
+	@media only screen and (max-width : 969px){
 		display:none !important;
 	}
+
 	min-height:450px;
-	background-color:#eee;
-	border:1px solid #ddd;
-
-	/* Ocultar usuario en resoluciones menores a 980px */
-
-
-	@include bienvenidos;
-
+	background-color:#f4f4f4;
+	border:1px solid #eee;
 
 	.nombre-usuario{
 		padding:5px;
@@ -529,7 +505,6 @@ div.box-usuario-portrait{
 			text-align: center;
 			margin-bottom: 0px;
 		}
-
 	}
 
 	.linea-usuario{
@@ -563,12 +538,11 @@ div.box-usuario-portrait{
 }
 
 
-/*--- Mostrar usuario en resoluciones menores a 980px ---*/
+/*--- Mostrar usuario en resoluciones menores a 970px ---*/
 
 div.box-usuario-portrait{
 
-	@media only screen 
-	and (min-width : 980px){
+	@media only screen and (max-width : 969px){
 		display:none;
 	}
 
@@ -618,7 +592,6 @@ div.box-usuario-portrait{
 				color:$textogeneral;
 				margin-top: 0;
 			}
-
 		}
 
 		.linea-usuario{

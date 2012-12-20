@@ -5,112 +5,144 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="es" class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-	<title>Personal | Layout Log</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<title>Personal | Home</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="" />
 	<meta name="author" content="">
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<script src="js/modernizr.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/modernizr.min.js"></script>
 	<script src="js/functions.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--[if IE]> <style type="text/css">
-		.row-fluid{
-		float:left;
+
+	<script>
+		if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)){ //test for MSIE x.x;
+			   var ieversion=new Number(RegExp.$1) // capture x.x portion and store as a number
+			   if (ieversion>=7  && ieversion<8)
+			   	location.href='explorer.html'
 		}
-		</style>
-		<![endif]-->
+	</script>
 	</head>
 	<body>
-
 		<!-- Contenedor General -->
 		<div class="container">
-
 			<!-- Header -->
 			<header class="row-fluid">
-
-				<div class="span24 header logos" id="header">
-					<!-- Logo, Buscador, SMS Online, Menu Superior -->
+				<div class="span24 header">
 					<div class="row-fluid">
-						<a class="link-logo" href="index.html">Home</a>
-						<div class="span12 head-menu">
-							<!-- <div class="date"> -->
-							<script>
-							MostrarFecha();
-							</script>
-							<!-- </div> -->
-							<div class="search-sms">
-								<a class="sms-online" href="#">SMS ONLINE</a>
-								<input type="submit" value="" class="sup-search-icon">
-								<input type="text" name="Buscar" value="Buscar" id="" class="sup-search">
-								<!-- <input type="search" name="Buscar" placeholder="Buscar" id="" class="sup-search"> -->
+						<a class="link-logo span5" href="index.html">Personal</a>
+						<div class="span18 ch-box-menu-options">
+							<ul class="ch-segment">
+								<li><a href="#" class="active">Individuos</a></li>
+								<li><a href="#">Empresas</a></li>
+							</ul>
+							<div class="ch-box-sab">
+								<a href="#" class="ch-smsonline">sms online</a>
+								<a href="#" class="ch-support">Ayuda y Soporte</a>
+								<input class="ch-search" type="search" name="buscar" id="" placeholder="Ingresá tu búsqueda">
+								<input class="ch-btn-search" type="submit" value="buscar">
 							</div>
-							<nav class="menu-superior">
-								<ul>
-									<li><a class="sup-active"href="#">Individuos</a></li>
-									<li><a href="#">Empresas</a></li>
-									<li><a href="#">Institucional</a></li>
-									<li><a class="faq-superior" href="#">?</a></li>
-								</ul>
-							</nav>
 						</div>
 					</div>
 
 					<!-- Menu Principal -->
 					<div class="row-fluid">
-						<nav class="menu-principal">
-							<ul id="nav-principal">
-								<li><a href="facturacion.html">Mi Cuenta</a></li>
-								<li><a href="#">Club Personal</a></li>
-								<li><a href="#">Planes</a></li>
-								<li><a href="#">Packs</a></li>
-								<li><a href="#">Promociones</a></li>
-								<li><a href="#">Compra Online</a></li>
-								<li><a href="#">Servicios</a></li>
-								<li><a href="#">Apps, Música y +</a></li>
-								<li><a href="#">Internet Movil</a></li>
-								<li><a href="#">Internacional</a></li>
-							</ul>
+						<nav class="span24 ch-main-menu">
+							<div class="ch-box-main-nav">
+								<ul class="ch-main-nav">
+									<li><a href="#">Mi Cuenta</a></li>
+									<li><a href="#">Club Personal</a></li>
+									<li><a href="#">Planes</a></li>
+									<li><a href="#">Packs</a></li>
+									<li><a href="#">Promociones</a></li>
+									<li><a href="#">Compra Online</a></li>
+									<li><a href="#">Servicios</a></li>
+									<li class="ch-hide-list"><a href="#">Apps, Música y +</a></li>
+									<li class="ch-hide-list"><a href="#">Internet Movil</a></li>
+									<li class="ch-hide-list"><a href="#">Internacional</a></li>
+									<li class="ch-hide-list ch-last-child-fake"><a href="#">Personal Black</a></li>
+									<li class="ch-show-more">
+										<a class="ch-show-more-btn" href="#"><span>Ver más</span></a>
+									</li>
+								</ul>
+								<div class="ch-show-more-box">
+									<ul class="ch-show-more-area">
+										<li><a href="#">Apps, Música y +</a></li>
+										<li><a href="#">Internet Móvil</a></li>
+										<li><a href="#">Internacional</a></li>
+										<li><a href="#">Personal Black</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="ch-iris-hide">
+								<a href="#" class="ch-btn-user-panel"><span>Ingresar</span></a>
+							</div>
 						</nav>
 					</div>
-				</div>
 			</header>
 
-			<!-- ***** Box Login resolucion hasta 979px *****-->
+			<!-- Seccion-->
+			<section class="row-fluid ch-main-section">
+				<div class="span19 ch-main">
+					<div class="ch-imagen-prueba">
+						<img src="img/prueba-borrar.jpg" class="ch-img-pruueba" alt="imagen de prueba" style="width:100%; min-width:680px;">
+					</div>
+				</div>
 
-			<aside class="login-drop-down">
-				<a href="#" class="bot-login-panel">
-					<span class="bot-login-txt">Ingresá con tu línea</span>
-				</a>
-
-				<div class="box-login-drop-down">
-					<div class="login-form-panel form-login">
-						<div class="linea-login">
-							<label for="caracteristica" class="numero-linea">Número de línea</label>
-							<label for="caracteristica" class="cero">0</label>
-							<input type="text" name="" id="caracteristica" class="caracteristica" placeholder="Ej.11">
-							<label for="numero" class="quince">15</label>
-							<input type="text" name="" id="numero" class="numero" placeholder="Ej.67897899">
+				<!--Box Login-->
+				<aside class="span5 ch-box-login">
+					<h4 class="ch-go">Ingresá con tu línea</h4>
+					<div class="ch-form-login">
+						<div class="ch-cellphone">
+							<label for="caracteristica" class="line-number-txt">Número de línea</label>
+							<label for="caracteristica" class="prefix">0</label>
+							<input type="text" rel="tooltip" data-original-title="Ej.11" name="" id="caracteristica" class="prefix" placeholder="Ej.11">
+							<label for="numero" class="line-number">15</label>
+							<input type="text" rel="tooltip" data-original-title="Ej. 67897899" name="" id="numero" class="line-number" placeholder="Ej.67897899">
 						</div>
-						<div class="clave-login">
-							<label for="clave" class="numero-linea">Clave Personal</label>
-							<input type="password" name="clave personal" id="clave" class="clave-personal">
+						<div class="ch-password">
+							<label for="clave" class="password-txt">Clave Personal</label>
+							<span>
+								<input type="password" name="clave personal" id="clave" class="password">
+								<a rel="tooltip" data-placement="left" data-original-title="Teclado virtual" class="keyboard" name="pc pública" id="pc-publica"></a>
+							</span>
 						</div>
-
-						<div class="ingresar">
-							<a href="#" class="no-clave">No tengo Clave</a>
-							<input type="submit" value="Ingresá" class="bot-ingresa">
+						<div class="ch-pass-not">
+							<a href="#">No tengo Clave</a>
 						</div>
-						<div class="como">
-							<a href="#" class="como-ingresar">¿Cómo ingresar?</a>
+						<div class="ch-go">
+							<input type="submit" value="Ingresá" class="btn-go">
 						</div>
-
-						<div class="acceso-pc">
-							<input type="checkbox" name="pc pública" id="pc-publica">
-							<label for="pc-publica" class="pc-pub">Estoy en una PC pública</label>
+					</div>
+					<div class="ch-new-password">
+						<label for="genera-tuclave" class="first-time">¿Primera vez que ingresás?</label>
+						<a href="#" class="new-password">Generá tu Clave Personal</a>
+					</div>
+				</aside>
+			<!-- Box Login resolucion hasta 969px -->
+			<aside class="ch-login-drop-down">
+				<div class="ch-box-login-drop-down index">
+					<div class="ch-login-form-panel ch-form-login">
+						<div class="ch-cellphone">
+							<label for="caracteristica">Número de línea</label>
+							<label for="caracteristica" class="prefix">0</label>
+							<input type="text" name="característica" id="caracteristica" class="prefix" placeholder="Ej.11">
+							<label for="numero" class="line-number">15</label>
+							<input type="text" name="" id="numero" class="line-number" placeholder="Ej.67897899">
+						</div>
+						<div class="ch-password">
+							<label for="clave" class="password">Clave Personal</label>
+							<input type="password" name="clave personal" id="clave" class="password">
+						</div>
+						<div class="ch-pass-not">
+							<a href="#">No tengo Clave</a>
+						</div>
+						<div class="ch-go">
+							<input type="submit" value="Ingresá" class="btn-go">
 						</div>
 					</div>
 					<div class="generar-clave-drop">
@@ -119,110 +151,55 @@
 					</div>
 				</div>
 			</aside>
-
-
-			<!-- Seccion-->
-			<section class="row-fluid seccion-principal">
-				<div class="span19 main">
-					<div class="imagen-prueba">
-						<img src="img/prueba-borrar.jpg" class="img-pruueba" alt="imagen de prueba" width="100%">
-					</div>
-
-				</div>
-
-				<!--Box Login-->
-				<aside class="span5 box-login">
-					<h4 class="ingresa">Ingresá con tu línea</h4>
-					<div class="form-login">
-						<div class="linea-login">
-							<label for="caracteristica" class="numero-linea">Número de línea</label>
-							<label for="caracteristica" class="cero">0</label>
-							<input type="text" name="" id="caracteristica" class="caracteristica" placeholder="Ej.11">
-							<label for="numero" class="quince">15</label>
-							<input type="text" name="" id="numero" class="numero" placeholder="Ej.67897899">
-						</div>
-						<div class="clave-login">
-							<label for="clave" class="numero-linea">Clave Personal</label>
-							<a href="#" class="no-clave">No tengo Clave</a>
-							<input type="password" name="clave personal" id="clave" class="clave-personal">
-						</div>
-						<div class="acceso-pc">
-							<input type="checkbox" name="pc pública" id="pc-publica">
-							<label for="pc-publica" class="pc-pub">Estoy en una PC pública</label>
-						</div>
-						<div class="ingresar">
-							<a href="#" class="como-ingresar">¿Cómo ingresar?</a>
-							<input type="submit" value="Ingresá" class="bot-ingresa">
-						</div>
-					</div>
-					<div class="generar-clave">
-						<label for="genera-tuclave" class="primera-vez">¿Primera vez que ingresás?</label>
-						<a href="#" class="genera-tuclave">Generá tu Clave Personal</a>
-					</div>
-
-					<div class="prueba-alan">
-						<p class="tituloalan">Accediendo a Mi Cuenta</p>
-						<ul>
-							<li><a href="#">Gestioná números amigos</a></li>
-							<li><a href="#">Comprá packs</a></li>
-							<li><a href="#">Adherite a factura online</a></li>
-							<li><a href="#">Generátui clave personal</a></li>
-							<li><a href="#">Suscribite al débito automático</a></li>
-							<li><a href="#">Conocé un hobbit</a></li>
-							<li><a href="#">mucho más...</a></li>
-						</ul>
-					</div>
-				</aside>
 			</section>
 
-
 			<!-- Footer-->
-			<footer class="footer-main row-fluid">
-				<nav class="span19 footer-nav">
+			<footer class="row-fluid ch-main-footer">
+				<nav class="span19 ch-nav-footer">
 					<ul>
 						<li>
-							<ul class="navpie">
-								<li class="titulo-footer">Institucional</li>
+							<ul class="footer-list">
+								<li class="title">Institucional</li>
 								<li><a href="#">Opciones</a></li>
 								<li><a href="#">Opciones</a></li>
 								<li><a href="#">Opciones</a></li>
 							</ul>
 						</li>
 						<li>
-							<ul class="navpie">
-								<li class="titulo-footer">Acerca de personal.com.ar</li>
+							<ul class="footer-list">
+								<li class="title">Acerca de personal.com.ar</li>
 								<li><a href="#">Opciones</a></li>
 								<li><a href="#">Opciones</a></li>
 								<li><a href="#">Opciones</a></li>
 							</ul>
 						</li>
 						<li>
-							<ul class="navpie">
-								<li class="titulo-footer">Centros de Atención</li>
+							<ul class="footer-list">
+								<li class="title">Centros de Atención</li>
 								<li><a href="#">Opciones</a></li>
 								<li><a href="#">Opciones</a></li>
 								<li><a href="#">Opciones</a></li>
 							</ul>
 						</li>
 						<li>
-							<ul class="navpie">
-								<li class="titulo-footer">Ayuda</li>
+							<ul class="footer-list">
+								<li class="title">Ayuda</li>
 								<li><a href="#">Opciones</a></li>
 								<li><a href="#">Opciones</a></li>
 								<li><a href="#">Opciones</a></li>
 							</ul>
 						</li>
 						<li>
-							<ul class="navpie">
-								<li class="titulo-footer">Legal</li>
+							<ul class="footer-list">
+								<li class="title">Legal</li>
 								<li><a href="#">Opciones</a></li>
 								<li><a href="#">Opciones</a></li>
 								<li><a href="#">Opciones</a></li>
 							</ul>
 						</li>
 						<li>
-							<ul class="navpie">
-								<li class="titulo-footer">Grupo Telecom</li>
+							<ul class="footer-list">
+								<li class="title">Grupo Telecom</li>
 								<li><a href="#">Opciones</a></li>
 								<li><a href="#">Opciones</a></li>
 								<li><a href="#">Opciones</a></li>
@@ -232,15 +209,29 @@
 				</nav>
 
 				<!--Social-->
-				<div class="span5 social">
+				<div class="span5 ch-social">
 					<ul>
-						<li><a class="social-seguinos_face" href="http://www.facebook.com/personalargentina" title="Seguinos en Facebook"></a></li>
-						<li><a class="social-seguinos_twitter" href="http://twitter.com/personalar" title="Seguinos en Twitter"></a></li>
-						<li><a class="social-google" href="https://plus.google.com/113768935913334354363?prsrc=3" title="Seguinos en Google+"></a></li>
-						<li><a class="social-seguinos_youtube" href="http://www.youtube.com/personalargentina" title="Seguinos en YouTube"></a></li>
-						<li><a class="social-link" href="http://www.linkedin.com/company/telecompersonal-argentina" title="Linkedin"></a></li>
-						<li><a class="social-seguinos_four" href="http://es.foursquare.com/personalar/" title="Seguinos en Foursquare"></a></li>
-						<li><a class="social-seguinos_pinterest" href="http://pinterest.com/personalarg/" title="Seguinos en Pinterest"></a></li>
+						<li>
+							<a class="social-seguinos_face" href="http://www.facebook.com/personalargentina" title="Seguinos en Facebook"></a>
+						</li>
+						<li>
+							<a class="social-seguinos_twitter" href="http://twitter.com/personalar" title="Seguinos en Twitter"></a>
+						</li>
+						<li>
+							<a class="social-google" href="https://plus.google.com/113768935913334354363?prsrc=3" title="Seguinos en Google+"></a>
+						</li>
+						<li>
+							<a class="social-seguinos_youtube" href="http://www.youtube.com/personalargentina" title="Seguinos en YouTube"></a>
+						</li>
+						<li>
+							<a class="social-link" href="http://www.linkedin.com/company/telecompersonal-argentina" title="Linkedin"></a>
+						</li>
+						<li>
+							<a class="social-seguinos_four" href="http://es.foursquare.com/personalar/" title="Seguinos en Foursquare"></a>
+						</li>
+						<li>
+							<a class="social-seguinos_pinterest" href="http://pinterest.com/personalarg/" title="Seguinos en Pinterest"></a>
+						</li>
 					</ul>
 				</div>
 			</footer>

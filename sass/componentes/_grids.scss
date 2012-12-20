@@ -174,13 +174,6 @@ textarea {
 
 .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container, .span24 {
   width: 950px;
-  
-  @media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1300px)
-and (orientation : landscape){
-      width:auto;
-    }
 }
 
 
@@ -1008,7 +1001,6 @@ and (orientation : landscape){
   [class*="span"], .row-fluid [class*="span"] {
     float: none;
     display: block;
-    width: 100%;
     margin-left: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
