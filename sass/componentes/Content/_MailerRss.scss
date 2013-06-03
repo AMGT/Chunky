@@ -1,0 +1,64 @@
+/* C mailer-rss-applications inicio*/
+.faqsMail {
+    width:340px;
+    height:500px;
+    border: solid 7px #BCBCBC;
+    .titulo {
+        font-family:Platform-Regular;
+        font-size:21px;
+        text-decoration:underline;
+        background-color:#EFEFEF;
+        width:325px;
+        text-align:left;
+        padding:5px 0px 0px 15px;
+        color:#616161;
+        height: 30px;
+    }
+    .contenido {
+        margin-left:0px;
+        margin-top:10px;
+        font-family:tahoma;
+        width:300px;
+        p{
+            margin-top:10px;
+            float:left;
+            margin-left:15px;
+            padding-left:0px;
+            font-family:tahoma;
+            font-size:12px;
+            text-align:left;
+            color:#4A4A4A;
+            width:150px;
+            text-align:left;
+        }
+        input{
+            margin-left:15px;
+            text-align:left;
+            border:1px solid #CCCCCC;
+        }
+        textarea{
+            margin-left:15px;
+            border:1px solid #CCCCCC;
+            height:180px;
+            width:300px;
+            display:block;
+            clear:both;
+        }
+    }
+    .boton_generico{
+        margin-right:25px;
+        float:right;
+        border:none;
+        height:23px;
+        border-left:1px solid #0B7588;
+        border-right:1px solid #0B7588;
+        border-bottom:1px solid #C5D2D6;
+        color:#fff;
+        font-weight:bold;
+        padding:2px 7px;
+        background-image:url(../_staticfiles/_pweb/css_images/btn_generico_bckg.jpg);
+        background-repeat:repeat-x;
+        cursor:pointer;
+    }
+}
+/* C mailer-rss-applications fin*/

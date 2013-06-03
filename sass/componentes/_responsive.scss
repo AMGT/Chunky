@@ -1,3 +1,29 @@
+/* responsive.scss
+ * Manejo de cambios estructurales en los diferentes tamaños de pantalla
+ * ------------------------------------------------------------------------------------*/
+
+/*--- Fija ancho mínimo 700px ---*/
+
+@media only screen and (max-width:700px){
+
+	.ch-container, .ch-megamenu-box, .ch-main-footer{
+		width:680px !important;
+	}
+	.ch-user-drop{
+		right: 10px;
+		left: 500px;	
+	}
+
+}
+
+/*--- Ajusta al ancho del dispositivo ---*/
+
+/*@media only screen and (max-device-width : 1300px){
+	.ch-container{
+		width: auto;
+	}
+}
+*/
 .ch-main{
 	width:100%;
 
@@ -10,16 +36,6 @@
 		width: 100%;
 		min-height: 49px;
 		float: left;
-
-		.ch-btn-user-hide{
-			height: 41px;
-			padding-top: 8px;
-
-			@media only screen and (max-width:969px){
-				display: none;
-			}
-			@include btn-ingresar;
-		}
 	}
 
 	.ch-content-page-log{

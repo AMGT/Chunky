@@ -1,0 +1,164 @@
+/*************************************** Oficinas comerciales inicio **********************************************/
+
+  .mapaOficinas {
+   height: 455px; }
+   
+  .mapaOficinas img {
+   max-width: none; }
+
+  .oficinasComerciales {
+   font-size: 12px;
+   margin-bottom: 10px;}
+  
+  .oficinasComerciales textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0px;
+    padding: 1px;}
+
+  .oficinasComerciales .texto {
+	border: 1px solid #C0C0C0;
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 1px 2px #DFDFDF inset;
+	color: #525252;
+	font-size: 12px;
+	height: 29px;
+	width: 160px;
+	}
+		
+  .oficinasComerciales table {
+	margin-bottom: 15px;}
+	
+  .oficinasComerciales td {
+	padding: 2px;}
+  	
+  .oficinasComerciales .seleccionador {
+    border: 1px solid #C0C0C0;
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 1px 2px #DFDFDF inset;
+	color: #525252;
+	font-size: 12px;
+	height: 30px;
+	width: 160px; 
+	margin: 0;
+	}	
+		
+  .oficinasComerciales .boton_generico {
+    background-color: #00B4C5;
+	background-image: linear-gradient(to bottom, #17bac9,#009ca8);
+	background-repeat: repeat-x;
+	border: 1px solid #009CA7;
+	border-radius: 2px 2px 2px 2px;
+	color: #FFFFFF;
+	float: left;
+	font-size: 14px;
+	height: 25px;
+	margin-top: 23px;
+	text-shadow: -1px -1px 1px #007C8E;
+	width: 100px; }
+
+  .oficinasComerciales input.ch-btn-search {
+	background-color: #00B4C5;
+	background-image: linear-gradient(to bottom, #17bac9,#009ca8);
+	background-repeat: repeat-x;
+	border: 1px solid #009CA7;
+	border-radius: 2px 2px 2px 2px;
+	color: #FFFFFF;
+	float: left;
+	font-size: 14px;
+	height: 25px;
+	margin-top: 22px;
+	text-shadow: -1px -1px 1px #007C8E;
+	width: 100px;
+	}	
+	/*
+  .oficinasComerciales table input[type="checkbox"] {
+	height: 20px;
+	width: 20px;
+	}
+	*/
+	
+  .oficinasComerciales .ch-oficina {
+	float: left;
+	width: 20px;
+	}
+  .oficinasComerciales .ch-oficina-texto {
+	padding-left: 18px;
+	}
+	
+.referencias {
+  background-image: url(/_staticfiles/img/referencias.jpg);
+  height: 95px;
+  width: 743px; }
+
+#suggestion #titulo {
+  background-color: #666;
+  color: white;
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+  margin-left: 2px;
+  padding: 4px;
+  text-align: left; }
+  
+#suggestion #sidebar {
+  color: #1D79AC;
+  font-size: 10px;
+  height: 435px;
+  overflow: auto;
+  text-align: left; }
+  
+#suggestion #sidebar div {
+    background-color: #efefef;
+    cursor: pointer;
+    margin: 0px 0px 2px 0px;
+    padding: 4px; }
+	
+#suggestion #sidebar div b {
+      font-size: 11px; }
+	  
+#suggestion #sidebar div img {
+      margin-top: 4px; }
+	  
+#suggestion #sidebar div:hover {
+      background-color: #fff; }
+
+#titulo-menu {
+  margin-top: 1px;
+  margin-left: 2px; }
+
+#titulo-menu .tituloOficinas .tituloh1 {
+    width: 400px; }
+
+#titulo-menu .tituloOficinas .tituloh1 a {
+      color: #999;
+      font-size: 35px;
+      font-family: PlatformRegular;
+      line-height: 26px;
+      letter-spacing: -1px;
+      margin-bottom: 6px;
+      padding: 2px;
+      text-decoration: none;
+      text-transform: none;
+      text-align: left; }
+
+#titulo-menu .subtituloOficinas .tituloh2 {
+    padding-left: 0px; }
+
+#titulo-menu .subtituloOficinas .tituloh2 a {
+      color: #10B5D3;
+      font-family: PlatformRegular;
+      font-size: 20px;
+      font-weight: normal;
+      padding-left: 5px;
+      padding-right: 5px;
+      text-decoration: none;
+      text-transform: none;
+      text-align: left; }
+
+@media (max-width: 767px) {
+  #map, #provincia, #selectProv, #localidad, #calle, #textCalle, #numero, #atencion, #chckOC, #OC, #chckAO, #AO, #chckGT {
+    float: left; }
+
+  #suggestion {
+    float: right; } }
+/************************ Oficinas Comerciales fin **********************************/

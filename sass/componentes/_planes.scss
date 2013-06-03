@@ -1,0 +1,56 @@
+.hplanesAbonoFijo, .hplanesTarjeta, .hplanesFactura{ 
+	float:left;
+	.titulo {
+		height:220px; width:306px;
+		}
+	.bajada{
+		width:306px; height:35px;background-color:#444444; text-align:center; color:#FFF; font-size:14px; padding-top:15px; border-bottom:1px solid #FFF;
+		}
+	.descripcionPlan{
+		height:203px; width:278px;background-repeat:repeat-x; color:#FFF; padding:17px 0 0 28px; 
+		.nombrePlan{font-size:24px; font-weight:bold}
+		.precioPlan{font-size:20px; font-weight:bold}
+		.bulletPlan{font-size:14px; margin-top:5px; line-height:18px;}
+		.verMas{ margin:10px 15px 0 0;}
+		}
+	}
+.hplanesAbonoFijo{
+	.titulo{
+		  background-image:url(/_staticfiles/_pweb/img/responsive/bkg_hplanes_abonofijo.jpg);
+		}
+	.descripcionPlan{background-image:url(/_staticfiles/_pweb/img/responsive/bkg_hplanes_abonofijo_color.jpg); }
+	}
+.hplanesTarjeta{
+	margin-left:6px;
+	.titulo{
+		background-image:url(/_staticfiles/_pweb/img/responsive/bkg_hplanes_tarjeta.jpg);
+		}
+	.descripcionPlan{background-image:url(/_staticfiles/_pweb/img/responsive/bkg_hplanes_tarjeta_color.jpg); }
+	}
+.hplanesFactura{	
+	margin-left:6px;
+	.titulo{
+		background-image:url(/_staticfiles/_pweb/img/responsive/bkg_hplanes_factura.jpg);
+		}
+	.descripcionPlan{background-image:url(/_staticfiles/_pweb/img/responsive/bkg_hplanes_factura_color.jpg); }
+	}
+	
+.titularInternaPlanes{width: 170px; height: 35px; background-image:url(/_staticfiles/_pweb/img/responsive/bkg_titular_planes_interna.jpg); color:#FFF; font-size:17px; font-weight:bold; padding-top:15px; padding-left:15px; float:left;  }
+.bajadaInternaPlanes{ margin-left:20px; float:left; width:650px; font-size:12px; margin-top:8px; line-height:18px;}
+.planIncluye{height: 70px; background-color:#444444; color:#FFF; padding:15px; margin-top:1px;
+	.titulo{font-size:17px; font-weight:bold;}
+	.listadoIncluyePlan{ font-size:14px; float:left; margin:5px 25px 0 0; line-height:20px; a{color:#58D9F1; text-decoration:underline;}}
+	}
+.planPrecioMinutoLocal,.planPrecioMinutoDistancia {width: 165px; background-color: #EEEEEE; height: 65px; float:left; margin-top: 1px; padding:15px 0 0 15px; font-size: 12px;
+	.item{font-weight: bold; margin-bottom: 10px;}
+	}
+.planPrecioMinutoDistancia{width: 734px; margin-left: 1px;
+	.valores{float: left; margin-right: 50px;}
+	}
+
+.activacionPlan{background-image: url(/_staticfiles/_pweb/img/responsive/bkg_activacion_planes_interna.jpg); background-repeat: repeat-x; width: 115px; height: 23px; text-align: center; margin-top: 10px; padding-top: 7px; font-size: 12px; color:#FFF;}
+.activacionComo,.activacionBeneficios{ padding: 15px; font-size: 12px; border-top: 1px solid #12ADC9;
+	.titulo{font-weight: bold;}
+	.bajada{ margin-top: 5px;}
+	}
+.activacionComo{border-top: 2px solid #12ADC9; margin-top: -1px;}

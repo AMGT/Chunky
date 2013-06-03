@@ -1,61 +1,82 @@
-
+/* ie.scss
+ *
+ * ------------------------------------------------------------------------------------*/
 /*--------- Estilos IE8 ---------*/
-
-/*--- Ocultar Login Drop Down ---*/
-.ie8 aside.ch-box-login-drop-down{
+.ch-ie8 {
+	aside.ch-user-drop{
 	display:none;
+	}
+	.ch-nav-footer ul li{
+		width: 15%;
+	}	
+	.ch-box-login input[type=text], .ch-box-login .ch-user-content .ch-password input.ch-password{
+		padding-top: 6px;
+	}	
+	.ch-user-box a.ch-genera{
+		padding-top: 8px !important;
+	}
+	.ch-box-sab input.ch-placeholder{
+		font-style: italic;
+	    color:#a2a2a2;
+	}
+	.ch-cellphone input{
+		padding-top: 6px !important;
+	}
+	.ch-user-drop{
+		top:157px;
+		right: auto;
+		margin-left: 760px;
+	}
 }
 
+/*--------- Estilos IE9 ---------*/
+.ch-ie9{
+	.ch-user-box a.ch-genera{
+		padding-top: 9px !important;
+	}
+	.ch-box-sab input.ch-placeholder{
+		font-style: italic;
+	    color:#a2a2a2;
+	}
 
-/*--------- IE9 ---------*/
-
-
+}
 
 /*--------- Landing IE7 ---------*/
 
-
-
-.ie7-container{
+.ch-ie7-container{
 	width:620px;
-	height:330px;
-	position:absolute;
-	left:50%;
-	top:50%;
-	margin:-205px 0 0 -360px;
-	padding:50px;
-	border: solid 1px #ccc;
-	overflow: hidden;
+	padding:30px;
+	margin: 40px auto;
+	border: solid 1px #CCC;
+	font-size: 18px;
 
-	.warning{
-		background: url(../img/ie7.warning.png) 0 0 no-repeat;
-		float: left;
-		width: 20%;
-		height: 74px;
+	.ch-warning{
+		background: url(/_staticfiles/_pweb/img/responsive/ie7.warning.png) 0 0 no-repeat;
+		padding: 0 0 0 100px;
+		height: 85px;
 	}
 
-	h1{
-		width: 80%;
-		float:right;
-		font-size: 35px;
-		color:$personalcolor1;
-
+	.ch-p1, .ch-p2, .ch-p3{
+		margin:0;
+		padding: 0;
 	}
 
-	h2{
-		margin-top: 50px;
-		font-size: 18px;
+	.ch-p1{
+		font-size: 32px;
+		color:$institucional;
+	}
+
+	.ch-p2{	
 		color:#999;
-
 	}
 
-	h3{
+	.ch-p3{
 		width: 100%;
 		text-align: center;
 		background:#030018;
-		font-size: 18px;
-		color: #FFF;
-		margin:15px 0;
+		color: #FFF;		
 		padding: 8px 0;
+		margin-bottom: 10px;
 	}
 	
 	ul{
@@ -63,40 +84,32 @@
 		width: 100%;
 		overflow: hidden;
 		padding-bottom:20px;
-		display: block;
 		li{
 			height: 100px;
-			display: inline;
+			float:left;
 			margin: 0 22px;
 			a{
-				background-image: url(../img/browsers.png);
-				background-repeat: no-repeat;
-				background-position:  0 0;
+				background: url(/_staticfiles/_pweb/img/responsive/browsers.png) no-repeat 0 0;
 				width: 75px;
-				display: inline-block;
+				display: block;
 				padding-top: 80px;
 				text-align: center;
 				text-decoration: none;
-				font-weight: bold;
 				font-size: 12px;
 				color:#999;
-				font-family: Tahoma, Geneva, sans-serif;
-				&.btn_chrome{
+				&.ch-btn_chrome{
 					background-position: 5px 0;
 				}
-				&.btn_firefox{
+				&.ch-btn_firefox{
 					background-position: -100px 0;
 				}
-				&.btn_opera{
+				&.ch-btn_opera{
 					background-position: -207px 0;
-					padding-top: 90px;
 				}
-				&.btn_safari{
+				&.ch-btn_safari{
 					background-position: -310px 0;
-
-					padding-top: 90px;
 				}
-				&.btn_ie{
+				&.ch-btn_ie{
 					background-position: -420px 0;
 				}
 				&:hover{
@@ -105,11 +118,9 @@
 			}
 		}
 	}
-	.logo{
-		background: url(../img/logo-landing.png) 0 0 no-repeat;
-		width:108px;
-		height:38px;
-		float: right;
-		margin-top: 20px;
+	.ch-logo{
+		background: url(/_staticfiles/_pweb/img/responsive/logo-ie.png) right top no-repeat;
+		height:34px;
+		margin-top: 15px;
 	}
 }
